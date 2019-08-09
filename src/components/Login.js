@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { login, resetPassword } from '../helpers/auth'
+import '../styles/login.scss';
+
+
 
 function setErrorMsg(error) {
   return {
@@ -23,27 +26,32 @@ export default class Login extends Component {
   }
   render () {
     return (
-      <div className="col-sm-6 col-sm-offset-3">
-        <h1> Login </h1>
-        <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
+      <div>
+        <form className="login-form" onSubmit={this.handleSubmit}>
+          <h3> Login </h3>
+          <div>
             <label>Email</label>
-            <input className="form-control" ref={(email) => this.email = email} placeholder="Email"/>
+            <input  
+            ref={(email) => this.email = email} 
+            placeholder="Email"
+            className=""
+            />
+
           </div>
-          <div className="form-group">
+          <div >
             <label>Password</label>
-            <input type="password" className="form-control" placeholder="Password" ref={(pw) => this.pw = pw} />
+            <input type="password" placeholder="Password" ref={(pw) => this.pw = pw} />
           </div>
           {
             this.state.loginMessage &&
-            <div className="alert alert-danger" role="alert">
-              <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span className="sr-only">Error:</span>
+            <div role="alert">
+              <span  aria-hidden="true"></span>
+              <span >Error:</span>
               &nbsp;{this.state.loginMessage} 
               <a href="/#" onClick={this.resetPassword} className="alert-link">Forgot Password?</a>
             </div>
           }
-          <button type="submit" className="btn btn-primary">Login</button>
+          <button className="button-sign-in" type="submit">Login</button>
         </form>
       </div>
     )

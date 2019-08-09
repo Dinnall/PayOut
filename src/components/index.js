@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
+import '../styles/navbar.scss';
+
 import { Route, BrowserRouter, Link, Redirect, Switch } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
@@ -56,18 +58,15 @@ export default class App extends Component {
   render() {
     return this.state.loading === true ? <h1>Loading</h1> : (
       <BrowserRouter>
-        <div>
-          <nav className="navbar navbar-default navbar-static-top">
-            <div className="container">
-              <div className="navbar-header">
-                <Link to="/" className="navbar-brand">React Router + Firebase Auth</Link>
+          <nav id="navbar">
+            <div className="nav-wrapper">
+              <div className="logo">
+                <Link to="/">PAYOUT</Link>
               </div>
-              <ul className="nav navbar-nav pull-right">
+
+              <ul id="menu">
                 <li>
-                  <Link to="/" className="navbar-brand">Home</Link>
-                </li>
-                <li>
-                  <Link to="/dashboard" className="navbar-brand">Dashboard</Link>
+                  <Link to="/dashboard">Dashboard</Link>
                 </li>
                 <li>
                   {this.state.authed
@@ -76,27 +75,26 @@ export default class App extends Component {
                         onClick={() => {
                           logout()
                         }}
-                        className="navbar-brand">Logout</button>
+                        >Logout</button>
                     : <span>
-                        <Link to="/login" className="navbar-brand">Login</Link>
-                        <Link to="/register" className="navbar-brand">Register</Link>
+                        <li>
+                        <Link to="/login" >Login</Link>
+                        </li>
+                        <li>
+                        <Link to="/register" >Register</Link>
+                        </li>
                       </span>}
                 </li>
               </ul>
             </div>
-          </nav>
-          <div className="container">
-            <div className="row">
+          </nav>       
               <Switch>
                 <Route path='/' exact component={Home} />
                 <PublicRoute authed={this.state.authed} path='/login' component={Login} />
                 <PublicRoute authed={this.state.authed} path='/register' component={Register} />
                 <PrivateRoute authed={this.state.authed} path='/dashboard' component={Dashboard} />
                 <Route render={() => <h3>No Match</h3>} />
-              </Switch>
-            </div>
-          </div>
-        </div>
+              </Switch>       
       </BrowserRouter>
     );
   }

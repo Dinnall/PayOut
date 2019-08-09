@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { auth } from '../helpers/auth'
+import '../styles/login.scss';
+
 
 function setErrorMsg(error) {
   return {
