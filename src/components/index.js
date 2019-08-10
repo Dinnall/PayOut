@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-// import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/navbar.scss';
 
 import { Route, BrowserRouter, Link, Redirect, Switch } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
-import Home from './Home'
+import HomePage from './Home/Home.js'
 import Dashboard from './protected/Dashboard'
 import { logout } from '../helpers/auth'
 import { firebaseAuth } from '../config/constants'
@@ -71,6 +70,7 @@ export default class App extends Component {
                 <li>
                   {this.state.authed
                     ? <button
+                        className="logout"
                         style={{border: 'none', background: 'transparent'}}
                         onClick={() => {
                           logout()
@@ -89,7 +89,7 @@ export default class App extends Component {
             </div>
           </nav>       
               <Switch>
-                <Route path='/' exact component={Home} />
+                <Route path='/' exact component={HomePage} />
                 <PublicRoute authed={this.state.authed} path='/login' component={Login} />
                 <PublicRoute authed={this.state.authed} path='/register' component={Register} />
                 <PrivateRoute authed={this.state.authed} path='/dashboard' component={Dashboard} />

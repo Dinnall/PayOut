@@ -1,0 +1,98 @@
+// .container{
+//   margin: 0px;
+//   padding: 0;
+//   font-family: sans-serif;
+//   color: red;
+//   background-color: green;
+//   border-style: solid;
+// }
+
+// img{
+// 	opacity: 0.7;
+// 	margin-top: -61px;
+
+// }
+
+.app{
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+  display:  flex; 
+  align-items:  center; 
+  justify-content: center; 
+}
+
+.sectionOne{
+   display: flex;
+    flex-direction: row;
+    width: 100%;
+    width: 100vw;
+    height: auto;
+    margin: auto auto;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);    
+}
+
+h1{
+  color:  white;
+  margin-top:30%;
+  text-align:center;
+  
+}
+.p-left{
+  color:white;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 10%;
+  font-weight: 400;
+
+}
+h2{
+  font-size:  24px; 
+  font-weight:  600; 
+  margin-bottom:  20px;
+  color:  rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-self: center;
+  border-bottom: 3px solid #BF55EC;
+}
+
+
+
+p{
+  line-height:  155%; 
+    margin-bottom:  5px; 
+    font-size:  14px; 
+    color:  #000; 
+    opacity:  .65;
+    font-weight:  400; 
+    max-width:  210px; 
+    margin-bottom:  40px; 
+}
+
+
+.left{
+  width: 50%;
+  width: 50vw;
+  height: auto;
+  margin: 0%;
+  background-color: #BF55EC;
+  background-size: cover;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  align-items: center;
+}
+
+.right{
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  width: 100vw;
+  height: 100vw;
+  overflow-y: hidden;
+  position: static;
+  align-items: center;
+}

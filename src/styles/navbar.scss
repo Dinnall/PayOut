@@ -32,7 +32,7 @@ a {
 }
 
 #menu{
-margin: -170px; 
+margin: -170px;
 }
 
 .logo {
@@ -76,7 +76,9 @@ margin: -170px;
 
 
 #navbar li a {
-  color: rgb(13, 26, 38);
+  // color: rgb(13, 26, 38);
+  color: #5F03FA;
+  font-weight: bold;
   display: block;
   font-size: 0.7em;
   letter-spacing: .5px;
@@ -89,11 +91,39 @@ margin: -170px;
   -webkit-transition: all 0.5s ease;
 }
 
-#navbar li a:hover {
-  /* border-bottom: 1px solid rgb(28, 121, 184); */
-  color: rgb(28, 121, 184);
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
+
+
+/* Animated logout button*/
+.logout{
+  color: #5F03FA;
+  font-weight: bold;
+  display: block;
+  font-size: 0.7em;
+  letter-spacing: .5px;
+  margin: 0 20px;
+  padding: 0 3px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;	
+}
+
+
+/* Animated Bottom Line */
+.logout:before, .logout:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(13, 26, 38);
+}
+
+.logout:hover:before {
+  background: rgb(13, 26, 38);
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
 }
 
 
