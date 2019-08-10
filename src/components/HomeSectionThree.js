@@ -26,13 +26,13 @@ export default class SectionThree extends Component {
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#section">Contact</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#section">About us</a>
                         </li>
                         <li>
-                            <a href="#">FAQ's</a>
+                            <a href="#section">FAQ's</a>
                         </li>
                     </ul>
                     <div class="footer-copyright">&copy; 2019 PAYOUT, all rights reserved</div>

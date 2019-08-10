@@ -18,10 +18,10 @@ export default class Register extends Component {
   }
   render () {
     return (
-      <div className="col-sm-6 col-sm-offset-3">
-        <h1>Register</h1>
-        <form onSubmit={this.handleSubmit}>
-          <div className="form-group">
+      <div>
+        <form className="login-form" onSubmit={this.handleSubmit}>
+          <h3>Register</h3>
+            <div className="form-group">
             <label>Email</label>
             <input className="form-control" ref={(email) => this.email = email} placeholder="Email"/>
           </div>
@@ -32,12 +32,12 @@ export default class Register extends Component {
           {
             this.state.registerError &&
             <div className="alert alert-danger" role="alert">
-              <span className="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span className="sr-only">Error:</span>
+              <span aria-hidden="true"></span>
+              <span>Error:</span>
               &nbsp;{this.state.registerError}
             </div>
           }
-          <button type="submit" className="btn btn-primary">Register</button>
+          <button type="submit" className="button-log-out" >Register</button>
         </form>
       </div>
     )

@@ -11,7 +11,7 @@ export default class SectionTwo extends Component {
 			<section className="testimonials section">
 				<div className="container">
 					<div className="testimonials-inner section-inner">
-						<h2 className="section-title mt-0 text-center"></h2>
+						<h2 className="section-title mt-0 text-center">'</h2>
 						<div className="testimonials-wrap">
 							<div className="testimonial text-center text-xs is-revealing">
 								<div className="testimonial-inner">

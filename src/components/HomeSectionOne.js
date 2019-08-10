@@ -9,10 +9,13 @@ export default class SectionOne extends Component {
         <div className="left">
           <h1>A modern social way to save </h1>
             <h1 className='p-left'>
-              Lorem ipsum dolor sit amet, consectetur adipiscin elit. 
-              Pellentesque cursus rhoncus felis ac sagittis. 
-              Nulla est metus, posuere ac iaculis vitae, porta id turpis. 
-              Morbi tristique sed nunc sit amet posuere. 
+              Going by various names around the world <i>Sou-sou</i>,<i>Partna</i>, <i>Tanda</i>.
+              <br />
+              <br />
+              <b>PAYOUT</b> is a modern way to save money for the expected and upexpected.
+              With <b>PAYOUT</b> you create the group(s). With PAYOUT as the banker.There is no need to physically collect money anymore. 
+              Money is collected weekly from each group member and avalaible to the designated member the same day money is collected. 
+
             </h1>
               <svg width="218" height="160" viewBox="0 0 724 672" xmlns="http://www.w3.org/2000/svg">
                     <defs>
