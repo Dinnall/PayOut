@@ -1,0 +1,155 @@
+// .app{
+//   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+//   display:  flex; 
+//   align-items:  center; 
+//   justify-content: center; 
+// }
+
+h1{
+  color:  white;
+  margin-top:30%;
+  text-align:center;  
+}
+
+
+.testimonials {
+
+	.section-inner {
+		padding-top: 0;
+	}
+
+    .section-title {
+        margin-bottom: 48px;
+    }
+}
+
+.testimonials-wrap {
+    display: flex;
+    flex-wrap: wrap;
+	align-items: flex-start; /* Disable equal height */
+    justify-content: center;
+    margin-right: -12px;
+    margin-left: -12px;
+
+    &:first-child {
+        margin-top: -12px;
+    }
+
+    &:last-child {
+        margin-bottom: -12px;
+    }
+}
+
+.testimonial {
+    padding: 12px;
+    width: 344px;
+    max-width: 344px;
+    flex-grow: 1;
+}
+
+.testimonial-inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background: color(bg, 1);
+    padding: 32px 24px;
+    //height: 100%;
+
+    > * {
+        width: 100%;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        mix-blend-mode: multiply;
+    }
+}
+
+.testimonial-header {
+
+	img {
+		width: 56px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+	}
+}
+
+.testimonial-body {
+
+	p {
+		margin-bottom: 12px;
+	}
+}
+
+.testimonial-footer {
+    align-self: flex-end;
+}
+
+.testimonial-name {
+	color: color(typography, 1);
+}
+
+.testimonial-footer {
+	margin-bottom: 40px;
+}
+
+
+
+	.testimonials {
+
+	    .section-title {
+	        margin-bottom: 64px;
+	    }
+	}
+
+	.testimonial {
+		width: 304px;
+		max-width: 304px;
+	}
+
+	.testimonials {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 127px;
+			left: calc(50% - 530px);
+			width: 1071px;
+			height: 598px;
+			background-repeat: no-repeat;
+		}
+
+		.section-title {
+			margin-bottom: 180px;
+		}
+	}
+
+	.testimonial {
+
+		&:nth-child(odd) {
+			margin-top: 48px;
+		}
+
+		&:first-child {
+			position: relative;
+			margin-top: 136px;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -136px;
+				left: calc(50% - 44px);
+				width: 89px;
+				height: 82px;
+			}
+		}
+	}

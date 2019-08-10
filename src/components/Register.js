@@ -3,7 +3,7 @@ import { auth } from '../helpers/auth'
 import '../styles/login.scss';
 
 
-function setErrorMsg(error) {
+function setErrorMsg(error){
   return {
     registerError: error.message
   }
