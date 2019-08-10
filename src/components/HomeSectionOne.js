@@ -13,8 +13,8 @@ export default class SectionOne extends Component {
               <br />
               <br />
               <b>PAYOUT</b> is a modern way to save money for the expected and upexpected.
-              With <b>PAYOUT</b> you create the group(s). With PAYOUT as the banker.There is no need to physically collect money anymore. 
-              Money is collected weekly from each group member and avalaible to the designated member the same day money is collected. 
+              With <b>PAYOUT</b> you create the group(s). With <b>PAYOUT</b> as the banker.There is no need to physically collect money anymore. 
+              Money is collected weekly from each group member and avalaible to the designated member the same day money it's collected. 
 
             </h1>
               <svg width="218" height="160" viewBox="0 0 724 672" xmlns="http://www.w3.org/2000/svg">
